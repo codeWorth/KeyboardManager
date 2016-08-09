@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-dR-joQ">
+                                <rect key="frame" x="180.5" y="550" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qOK-t1-HiC">
+                                <rect key="frame" x="180" y="512" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jyC-rT-6Qn">
+                                <rect key="frame" x="180" y="408" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ptQ-O9-qIy">
+                                <rect key="frame" x="180" y="370" width="240" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8xD-dR-joQ" firstAttribute="top" secondItem="qOK-t1-HiC" secondAttribute="bottom" constant="8" id="GeI-nI-WOl"/>
+                            <constraint firstItem="ptQ-O9-qIy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="Kxa-bn-YmP"/>
+                            <constraint firstItem="qOK-t1-HiC" firstAttribute="top" secondItem="jyC-rT-6Qn" secondAttribute="bottom" constant="74" id="O2Y-od-9hf"/>
+                            <constraint firstItem="qOK-t1-HiC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OH4-O4-Zfx"/>
+                            <constraint firstItem="jyC-rT-6Qn" firstAttribute="top" secondItem="ptQ-O9-qIy" secondAttribute="bottom" constant="8" id="U5R-ag-aPO"/>
+                            <constraint firstItem="8xD-dR-joQ" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="UxM-7y-WiM"/>
+                            <constraint firstItem="jyC-rT-6Qn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="b8w-we-ngS"/>
+                            <constraint firstItem="ptQ-O9-qIy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jEh-bM-hw6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8xD-dR-joQ" secondAttribute="bottom" constant="20" id="rjU-hd-GGf"/>
+                            <constraint firstItem="qOK-t1-HiC" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="uZJ-Hr-N23"/>
+                            <constraint firstItem="jyC-rT-6Qn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wlV-xJ-aM2"/>
+                            <constraint firstItem="8xD-dR-joQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xnJ-Sk-XZs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="password" destination="8xD-dR-joQ" id="LiH-oh-xJy"/>
+                        <outlet property="topPassword" destination="ptQ-O9-qIy" id="UAF-R1-ohW"/>
+                        <outlet property="topUsername" destination="jyC-rT-6Qn" id="djP-zD-6Op"/>
+                        <outlet property="username" destination="qOK-t1-HiC" id="tdw-fn-WST"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
